@@ -1,0 +1,30 @@
+[
+{
+"id": "egg",
+"title": "Egg",
+"description": "Butterflies start life as small eggs laid on leaves. The eggs are tiny and contain the developing caterpillar.",
+"image": "src/assets/egg.svg",
+"position": { "x": 80, "y": 220 }
+},
+{
+"id": "caterpillar",
+"title": "Caterpillar",
+"description": "The larvae hatch and grow quickly, shedding their skin several times while they eat leaves.",
+"image": "src/assets/caterpillar.svg",
+"position": { "x": 320, "y": 120 }
+},
+{
+"id": "chrysalis",
+"title": "Chrysalis",
+"description": "Inside the chrysalis, the caterpillar transforms — tissue reorganizes and the butterfly forms.",
+"image": "src/assets/chrysalis.svg",
+"position": { "x": 560, "y": 220 }
+},
+{ 
+"id": "butterfly",
+"title": "Butterfly",
+"description": "A fully formed butterfly emerges, dries its wings, and flies off to feed and find a mate.",
+"image": "src/assets/butterfly.svg",
+"position": { "x": 820, "y": 120 }
+}
+]

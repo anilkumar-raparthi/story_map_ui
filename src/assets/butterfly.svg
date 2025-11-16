@@ -1,0 +1,14 @@
+<!-- Friendly adult butterfly with decorative wing patterns -->
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200" fill="none">
+<g transform="translate(20,20)">
+<!-- left wing -->
+<path d="M60 80 C10 10 90 0 120 40 C110 48 80 70 60 80z" fill="#ffd98a" stroke="#f1a94b" stroke-width="4" />
+<circle cx="70" cy="40" r="8" fill="#fff" opacity="0.6" />
+<!-- right wing -->
+<path d="M140 80 C190 10 110 0 80 40 C90 48 120 70 140 80z" fill="#ffe3b8" stroke="#f1a94b" stroke-width="4" />
+<circle cx="130" cy="40" r="6" fill="#fff" opacity="0.6" />
+<!-- body -->
+<rect x="98" y="72" width="24" height="44" rx="12" fill="#3b2e2e" />
+<path d="M110 64 q-6 -12 -12 -18" stroke="#3b2e2e" stroke-width="3" fill="none" stroke-linecap="round" />
+</g>
+</svg>
