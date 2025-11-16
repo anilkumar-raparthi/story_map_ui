@@ -4,6 +4,9 @@ import StageIcon from "./components/StageIcon";
 import InfoPopup from "./components/InfoPopup";
 import AnimatedArrow from "./components/AnimatedArrow";
 import stagesData from "./data/stages.json";
+const sparkle = new URL("./assets/sparkle.svg", import.meta.url).href;
+const sun = new URL("./assets/sun.svg", import.meta.url).href;
+
 
 export default function App() {
   const [stages, setStages] = useState([]);
@@ -56,7 +59,7 @@ export default function App() {
         <section className="mapWrap" aria-label="Butterfly life cycle map">
           {/* Background visuals */}
           <img
-            src="src/assets/sparkle.svg"
+            src={sparkle}
             alt=""
             style={{
               position: "absolute",
@@ -69,7 +72,7 @@ export default function App() {
           />
 
           <img
-            src="src/assets/sun.svg"
+            src={sun}
             alt="Sun"
             style={{
               position: "absolute",

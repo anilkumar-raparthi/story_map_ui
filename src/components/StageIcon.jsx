@@ -2,6 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function StageIcon({ stage, onClick, locked }) {
+  // Resolve Vite asset path
+  const imgSrc = new URL(`../assets/${stage.image}`, import.meta.url).href;
+
   return (
     <motion.button
       className="stageIcon"
@@ -11,6 +14,7 @@ export default function StageIcon({ stage, onClick, locked }) {
         cursor: locked ? "not-allowed" : "pointer",
         opacity: locked ? 0.35 : 1,
         filter: locked ? "grayscale(70%) blur(0.3px)" : "none",
+        position: "absolute", // ensure correct placement if needed
       }}
       onClick={() => !locked && onClick(stage)}
       whileHover={!locked ? { scale: 1.06 } : {}}
@@ -21,7 +25,7 @@ export default function StageIcon({ stage, onClick, locked }) {
       aria-label={stage.title}
     >
       <img
-        src={stage.image}
+        src={imgSrc}
         alt={stage.title}
         style={{ width: "100%", height: "100%" }}
       />
